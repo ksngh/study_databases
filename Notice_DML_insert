@@ -1,0 +1,19 @@
+INSERT INTO Notice (NOTICE_PK, CONTENT, WRITER)
+VALUES
+    ('NOT01', '서비스 점검 안내', '관리자'),
+    ('NOT02', '이벤트 안내', '마케팅팀'),
+    ('NOT03', '새로운 기능 추가 안내', '관리자'),
+    ('NOT04', '결제 시스템 업그레이드 안내', '운영팀'),
+    ('NOT05', '서비스 이용약관 변경 안내', '운영팀');
+    
+
+INSERT INTO VisitorS (NOTICE_FK, VISITOR_PK, VISITOR)
+VALUES
+    ('NOT01', 'VI_01', '홍길동'),
+    ('NOT01', 'VI_02', '김영희'),
+    ('NOT02', 'VI_03', '백지영'),
+    ('NOT02', 'VI_04', '최민호'),
+    ('NOT02', 'VI_05', '송지현');
+    
+SELECT * FROM VISITORS;
+SELECT * FROM NOTICE;
