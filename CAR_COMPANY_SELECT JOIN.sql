@@ -1,0 +1,11 @@
+SELECT 
+    c.COMPANY,
+    c.CAR_NAME,
+    c.AGE,
+    COUNT(co.OPTION_PK) AS OPTION_COUNT
+FROM 
+    CAR c
+LEFT JOIN 
+    CAR_OPTION co ON c.CAR_PK = co.CAR_PK
+GROUP BY 
+    c.COMPANY, c.CAR_NAME, c.AGE;
